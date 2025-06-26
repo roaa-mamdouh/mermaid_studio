@@ -1,0 +1,64 @@
+<div class="mermaid-studio-page">
+    <div class="row">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Welcome to Mermaid Studio</h5>
+                    <p class="card-text">Create and manage diagrams using the Mermaid syntax.</p>
+                    <div class="d-flex mb-4">
+                        <a href="/app/diagram/new-diagram" class="btn btn-primary mr-2">
+                            <i class="fa fa-plus"></i> New Diagram
+                        </a>
+                        <a href="/app/diagram" class="btn btn-light">
+                            <i class="fa fa-list"></i> View All Diagrams
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card mt-4">
+                <div class="card-body">
+                    <h5 class="card-title">Recent Diagrams</h5>
+                    <div id="recentDiagrams">
+                        <div class="text-muted">Loading diagrams...</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Sample Diagram</h5>
+                    <div class="mermaid-diagram-container">
+                        <div class="mermaid">
+                            graph TD
+                                A[Start] --> B{Decision}
+                                B -->|Yes| C[Process]
+                                B -->|No| D[Alternative]
+                                C --> E[End]
+                                D --> E
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card mt-4">
+                <div class="card-body">
+                    <h5 class="card-title">Quick Links</h5>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <a href="/app/diagram?is_template=1">Browse Templates</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="/app/diagram-folder">Manage Folders</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="/app/diagram-share">Shared Diagrams</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 

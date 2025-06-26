@@ -1,0 +1,33 @@
+{% extends "templates/web.html" %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block page_content %}
+<div id="mermaid-studio-app" class="mermaid-studio-container">
+  <!-- Vue app will be mounted here -->
+  <div class="text-center py-8">
+    <div class="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-purple-500 mx-auto"></div>
+    <p class="mt-4 text-gray-600">Loading Mermaid Studio...</p>
+  </div>
+</div>
+{% endblock %}
+
+{% block script %}
+<!-- Include Vue and other dependencies -->
+<script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+<script src="https://unpkg.com/vue-router@4/dist/vue-router.global.prod.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.7/dayjs.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.7/plugin/relativeTime.js"></script>
+<script>dayjs.extend(dayjs_plugin_relativeTime);</script>
+
+<!-- Include Vue components -->
+<script src="/assets/mermaid_studio/js/vue/components/MermaidStudioApp.js"></script>
+<script src="/assets/mermaid_studio/js/vue/components/DiagramGallery.js"></script>
+<script src="/assets/mermaid_studio/js/vue/components/DiagramEditor.js"></script>
+<script src="/assets/mermaid_studio/js/vue/components/DiagramView.js"></script>
+<script src="/assets/mermaid_studio/js/vue/components/DiagramTemplates.js"></script>
+<script src="/assets/mermaid_studio/js/vue/components/DiagramSharing.js"></script>
+
+<!-- Initialize Vue app -->
+<script src="/assets/mermaid_studio/js/vue/mermaid_studio_app.js"></script>
+{% endblock %} 

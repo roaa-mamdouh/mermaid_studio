@@ -1,0 +1,225 @@
+/* Mermaid Studio CSS */
+
+/* General styles */
+.mermaid-studio-container {
+  min-height: 80vh;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+/* Button styles */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.375rem;
+  font-weight: 500;
+  font-size: 0.875rem;
+  padding: 0.5rem 1rem;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: #6366f1;
+  color: white;
+  border: 1px solid #6366f1;
+}
+
+.btn-primary:hover {
+  background-color: #4f46e5;
+  border-color: #4f46e5;
+}
+
+.btn-outline {
+  border: 1px solid #d1d5db;
+  color: #4b5563;
+  background-color: transparent;
+}
+
+.btn-outline:hover {
+  background-color: #f3f4f6;
+}
+
+.btn-sm {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+}
+
+/* Diagram preview styles */
+.diagram-preview {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.mermaid-preview {
+  max-width: 100%;
+  max-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mermaid-preview svg {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* Transitions */
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.2s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+/* Type badges */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.5rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.badge-flowchart {
+  background-color: #dbeafe;
+  color: #1e40af;
+}
+
+.badge-sequence {
+  background-color: #dcfce7;
+  color: #166534;
+}
+
+.badge-gantt {
+  background-color: #fef3c7;
+  color: #92400e;
+}
+
+.badge-class {
+  background-color: #f3e8ff;
+  color: #6b21a8;
+}
+
+.badge-state {
+  background-color: #e0e7ff;
+  color: #3730a3;
+}
+
+.badge-pie {
+  background-color: #fce7f3;
+  color: #9d174d;
+}
+
+.badge-other {
+  background-color: #f3f4f6;
+  color: #374151;
+}
+
+/* Custom styles for Mermaid diagrams */
+.mermaid-diagram-container {
+  padding: 20px;
+  background: #f8fafc;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  margin-bottom: 20px;
+}
+
+/* Editor styling */
+.mermaid-editor {
+  font-family: 'Fira Code', 'Monaco', 'Menlo', monospace;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* Preview panel */
+.mermaid-preview {
+  background: linear-gradient(45deg, #f8fafc 25%, transparent 25%), 
+              linear-gradient(-45deg, #f8fafc 25%, transparent 25%), 
+              linear-gradient(45deg, transparent 75%, #f8fafc 75%), 
+              linear-gradient(-45deg, transparent 75%, #f8fafc 75%);
+  background-size: 20px 20px;
+  background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* Custom button styling */
+.mermaid-btn {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.mermaid-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+}
+
+/* List view styling */
+.mermaid-list-item {
+  transition: all 0.2s ease;
+  border-left: 3px solid transparent;
+}
+
+.mermaid-list-item:hover {
+  border-left-color: #764ba2;
+  background-color: rgba(118, 75, 162, 0.05);
+}
+
+/* Custom badge for diagram types */
+.mermaid-badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.mermaid-badge-flowchart {
+  background-color: #e1f5fe;
+  color: #0288d1;
+}
+
+.mermaid-badge-sequence {
+  background-color: #f3e5f5;
+  color: #7b1fa2;
+}
+
+.mermaid-badge-gantt {
+  background-color: #e8f5e9;
+  color: #388e3c;
+}
+
+.mermaid-badge-class {
+  background-color: #fff3e0;
+  color: #f57c00;
+}
+
+.mermaid-badge-state {
+  background-color: #e3f2fd;
+  color: #1976d2;
+}
+
+.mermaid-badge-pie {
+  background-color: #fce4ec;
+  color: #c2185b;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .mermaid-diagram-container {
+    padding: 10px;
+  }
+} 

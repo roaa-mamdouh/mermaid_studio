@@ -1,0 +1,108 @@
+{
+ "actions": [],
+ "allow_rename": 0,
+ "autoname": "format:VER-{diagram}-{version_number}",
+ "creation": "2023-09-01 00:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "diagram",
+  "version_number",
+  "created_by",
+  "created_on",
+  "section_break_5",
+  "change_notes",
+  "section_break_7",
+  "diagram_code"
+ ],
+ "fields": [
+  {
+   "fieldname": "diagram",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Diagram",
+   "options": "Diagram",
+   "reqd": 1
+  },
+  {
+   "fieldname": "version_number",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Version Number",
+   "reqd": 1
+  },
+  {
+   "fieldname": "diagram_code",
+   "fieldtype": "Code",
+   "label": "Diagram Code",
+   "options": "Text",
+   "reqd": 1
+  },
+  {
+   "fieldname": "change_notes",
+   "fieldtype": "Text",
+   "label": "Change Notes"
+  },
+  {
+   "fieldname": "created_by",
+   "fieldtype": "Link",
+   "label": "Created By",
+   "options": "User",
+   "read_only": 1
+  },
+  {
+   "fieldname": "created_on",
+   "fieldtype": "Datetime",
+   "label": "Created On",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_5",
+   "fieldtype": "Section Break",
+   "label": "Change Notes"
+  },
+  {
+   "fieldname": "section_break_7",
+   "fieldtype": "Section Break",
+   "label": "Diagram Code"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-09-01 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Mermaid Studio",
+ "name": "Diagram Version",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 0,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "All",
+   "share": 1,
+   "write": 0
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+} 

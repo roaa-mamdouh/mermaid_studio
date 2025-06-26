@@ -1,9 +1,9 @@
 app_name = "mermaid_studio"
 app_title = "Mermaid Studio"
-app_publisher = "Roaa"
-app_description = "Mermaid js integration"
-app_email = "roaa@axentor.co"
-app_license = "mit"
+app_publisher = "Frappe"
+app_description = "Mermaid Diagram Studio for Frappe"
+app_email = "developers@frappe.io"
+app_license = "MIT"
 
 # Apps
 # ------------------
@@ -11,26 +11,33 @@ app_license = "mit"
 # required_apps = []
 
 # Each item in the list will be shown as an app in the apps page
-# add_to_apps_screen = [
-# 	{
-# 		"name": "mermaid_studio",
-# 		"logo": "/assets/mermaid_studio/logo.png",
-# 		"title": "Mermaid Studio",
-# 		"route": "/mermaid_studio",
-# 		"has_permission": "mermaid_studio.api.permission.has_app_permission"
-# 	}
-# ]
+add_to_apps_screen = [
+	{
+		"name": "mermaid_studio",
+		"logo": "/assets/mermaid_studio/img/mermaid_logo.svg",
+		"title": "Mermaid Studio",
+		"route": "/app/mermaid-studio",
+		#"has_permission": "mermaid_studio.api.permission.has_app_permission"
+	}
+]
 
 # Includes in <head>
 # ------------------
 
 # include js, css files in header of desk.html
-# app_include_css = "/assets/mermaid_studio/css/mermaid_studio.css"
-# app_include_js = "/assets/mermaid_studio/js/mermaid_studio.js"
+app_include_css = "/assets/mermaid_studio/css/mermaid_studio.css"
+app_include_js = [
+    "/assets/mermaid_studio/js/mermaid_studio_bundle.js"
+]
 
 # include js, css files in header of web template
-# web_include_css = "/assets/mermaid_studio/css/mermaid_studio.css"
-# web_include_js = "/assets/mermaid_studio/js/mermaid_studio.js"
+web_include_css = [
+    "/assets/mermaid_studio/css/mermaid_studio.css",
+    "https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+]
+web_include_js = [
+    "/assets/mermaid_studio/js/mermaid_studio_bundle.js"
+]
 
 # include custom scss in every website theme (without file extension ".scss")
 # website_theme_scss = "mermaid_studio/public/scss/website"
@@ -43,7 +50,9 @@ app_license = "mit"
 # page_js = {"page" : "public/js/file.js"}
 
 # include js in doctype views
-# doctype_js = {"doctype" : "public/js/doctype.js"}
+doctype_js = {
+    "Diagram": "public/js/diagram_preview.js"
+}
 # doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
 # doctype_calendar_js = {"doctype" : "public/js/doctype_calendar.js"}
@@ -235,10 +244,27 @@ app_license = "mit"
 # 	"mermaid_studio.auth.validate"
 # ]
 
+# Website Routes
+website_route_rules = [
+    {"from_route": "/mermaid-studio", "to_route": "mermaid_studio"},
+    {"from_route": "/mermaid-studio/editor", "to_route": "mermaid_studio"},
+    {"from_route": "/mermaid-studio/editor/*", "to_route": "mermaid_studio"},
+    {"from_route": "/mermaid-studio/view/*", "to_route": "mermaid_studio"},
+    {"from_route": "/mermaid-studio/templates", "to_route": "mermaid_studio"},
+    {"from_route": "/mermaid-studio/share/*", "to_route": "mermaid_studio"},
+    {"from_route": "/mermaid-studio/*", "to_route": "mermaid_studio"}
+]
+
 # Automatically update python controller files with type annotations for this app.
 # export_python_type_annotations = True
 
 # default_log_clearing_doctypes = {
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
+
+# Fixtures
+fixtures = [
+    {"dt": "Workspace", "filters": [["name", "in", ["Mermaid Studio"]]]},
+    {"dt": "Page", "filters": [["name", "in", ["mermaid_studio"]]]},
+]
 

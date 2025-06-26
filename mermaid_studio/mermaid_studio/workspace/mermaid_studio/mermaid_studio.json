@@ -1,0 +1,173 @@
+{
+ "charts": [],
+ "content": [
+  {
+   "type": "header",
+   "data": {
+    "text": "Mermaid Studio",
+    "level": 1
+   }
+  },
+  {
+   "type": "shortcut",
+   "data": {
+    "shortcut_name": "All Diagrams",
+    "col": 3
+   }
+  },
+  {
+   "type": "shortcut",
+   "data": {
+    "shortcut_name": "New Diagram",
+    "col": 3
+   }
+  },
+  {
+   "type": "shortcut",
+   "data": {
+    "shortcut_name": "My Diagrams",
+    "col": 3
+   }
+  },
+  {
+   "type": "spacer",
+   "data": {
+    "col": 12
+   }
+  },
+  {
+   "type": "card",
+   "data": {
+    "card_name": "Diagram",
+    "col": 4
+   }
+  },
+  {
+   "type": "card",
+   "data": {
+    "card_name": "Settings",
+    "col": 4
+   }
+  }
+ ],
+ "category": "Modules",
+ "charts": [],
+ "creation": "2023-01-01 00:00:00",
+ "developer_mode_only": 0,
+ "disable_user_customization": 0,
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "extends_another_page": 0,
+ "hide_custom": 0,
+ "icon": "diagram",
+ "idx": 0,
+ "is_default": 0,
+ "is_standard": 1,
+ "label": "Mermaid Studio",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Diagram",
+   "link_count": 0,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Diagram",
+   "link_count": 0,
+   "link_to": "Diagram",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Diagram Folder",
+   "link_count": 0,
+   "link_to": "DiagramFolder",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Diagram Version",
+   "link_count": 0,
+   "link_to": "DiagramVersion",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Settings",
+   "link_count": 0,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Diagram Share",
+   "link_count": 0,
+   "link_to": "DiagramShare",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Diagram Tag",
+   "link_count": 0,
+   "link_to": "DiagramTag",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2023-01-01 00:00:00",
+ "modified_by": "Administrator",
+ "module": "Mermaid Studio",
+ "name": "Mermaid Studio",
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "restrict_to_domain": "",
+ "roles": [],
+ "sequence_id": 1.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "format": "{} Published",
+   "label": "All Diagrams",
+   "link_to": "Diagram",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Blue",
+   "doc_view": "New",
+   "label": "New Diagram",
+   "link_to": "Diagram",
+   "type": "DocType"
+  },
+  {
+   "color": "Green",
+   "doc_view": "List",
+   "label": "My Diagrams",
+   "link_to": "Diagram",
+   "stats_filter": "[[\"owner\", \"=\", \"user\"]]",
+   "type": "DocType"
+  }
+ ],
+ "title": "Mermaid Studio"
+} 

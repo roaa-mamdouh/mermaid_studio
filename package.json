@@ -1,0 +1,17 @@
+{
+  "name": "mermaid_studio",
+  "version": "0.0.1",
+  "description": "Mermaid Diagram Editor for Frappe",
+  "main": "index.js",
+  "scripts": {
+    "build": "echo 'Building Mermaid Studio assets...'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "frappe",
+    "mermaid",
+    "diagrams"
+  ],
+  "author": "Roaa",
+  "license": "MIT"
+} 
